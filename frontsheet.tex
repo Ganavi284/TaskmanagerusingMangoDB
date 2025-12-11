@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+%\usepackage{fontspec}
+\input{File_Setup.tex}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage{fancyhdr}
+\usepackage{blindtext}
+\usepackage{lipsum}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage{mdframed}
+\usepackage{xcolor}
+\usepackage{graphicx}
+% Geometry setup - optimized for full page usage
+\usepackage{geometry}
+\geometry{
+	paper=a4paper, % Paper size
+	top=2cm, % Reduced top margin
+	bottom=2cm, % Reduced bottom margin
+	left=2cm, % Reduced left margin
+	right=2cm, % Right margin
+	headheight=0.75cm, % Header height
+	footskip=1cm, % Reduced footer space
+	headsep=0.5cm, % Reduced header separation
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+% Roman numbering capability
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+\begin{document}
+% Page numbering setup
+\setcounter{page}{1}
+\pagenumbering{roman}
+% Front page
+\begin{titlepage}
+\begin{mdframed}[linewidth=2pt, roundcorner=5pt]
+\centering
+\vspace{0.5cm}
+% University logo and header
+{\large \includegraphics[width=0.15\textwidth]{karlogo.jpeg}}\\[0.4cm]
+{\Large\bfseries Government of Karnataka}\\[0.3cm]
+{\Large\bfseries Department of Collegiate and Technical Education}\\[0.4cm]
+{\LARGE\bfseries VISVESVARAYA TECHNOLOGICAL UNIVERSITY}\\[0.3cm]
+{\LARGE\bfseries "JNANA SANGAMA", BELAGAVI-590018}\\[0.7cm]
+% College logo
+\includegraphics[width=0.20\textwidth, height=0.20\textwidth]{logo.jpg}\\[0.6cm]
+% Report title section
+{\Huge \textbf{Report on}}\\[0.7cm]
+{\LARGE \bfseries \textcolor{blue}{"YOGA FOR A BETTER LIFE"}}\\[0.8cm]
+% Course information
+{\Large  submitted in partial fulfillment of the requirement for the award of}\\[0.5cm]
+{\Large \textbf{Bachelor Degree in}}\\[0.3cm]
+{\LARGE \textbf{Computer Science and Engineering}}\\[0.7cm]
+% Student details
+{\LARGE \textbf{Submitted By}}\\[1cm]
+\begin{tabular}{c}
+\LARGE \textbf{Tanushree K S} \hspace{0.8cm}
+\LARGE \textbf{4HG22CS050}
+\end{tabular}\\[1.2cm]
+% Academic year and semester (you can uncomment and modify as needed)
+% {\Large \textbf{Academic Year: 2024-25}}\\[0.3cm]
+% {\Large \textbf{Semester: [Your Semester]}}\\[0.5cm]
+% College information
+{\LARGE {Department of Computer Science and Engineering}}\\[0.5cm]
+{\LARGE \textbf{GOVERNMENT ENGINEERING COLLEGE}}\\[0.5cm]
+{\LARGE \textbf{MOSALEHOSAHALLI, HASSAN-573212}}\\[0.7cm]
+% Year
+{\LARGE \textbf{2025-26}}
+\vspace{1cm}
+\end{mdframed}
+\end{titlepage}
+\end{document}
